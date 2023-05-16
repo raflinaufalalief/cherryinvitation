@@ -88,9 +88,11 @@ const MobileNav = () => {
   return (
     <div className='w-full bg-white'>
       <div className='flex items-center justify-between px-[1rem] py-6 font-medium '>
-        <div className='flex items-center'>
-          <img src={Logo} alt='logo' className='cursor-pointer w-[48px]' />
-          <h1 className='text-base font-bold'>Cherry Invitation</h1>
+        <div className=''>
+          <Link to={'/'} className='flex items-center'>
+            <img src={Logo} alt='logo' className='cursor-pointer w-[48px]' />
+            <h1 className='text-base font-bold'>Cherry Invitation</h1>
+          </Link>
         </div>
 
         {/* Nav link */}
@@ -107,6 +109,7 @@ const MobileNav = () => {
               className={`absolute top-24 bg-200 px-4 py-7 w-full transition-all duration-150 ease-in-out ${
                 menu ? 'left-0' : 'left-[-1000px]'
               }`}
+              onClick={() => setMenu((prev) => !prev)}
             >
               {Links.map((index) => (
                 <li key={index.id} className='flex items-center gap-x-2'>

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 const Home = () => {
-  return <div></div>;
-};
+  return <div>Ini Home belom jadi ngab </div>
+}
 
-export default Home;
+export default Home
