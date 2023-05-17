@@ -129,7 +129,7 @@ const MobileNav = () => {
                     type='button'
                     className='bg-secondary px-4 py-2 w-full rounded-full font-normal hover:bg-secondary/95 text-200'
                   >
-                    Login/Register
+                    <Link to='/sign-in'>Login/Register</Link>
                   </button>
                 </div>
               </div>
