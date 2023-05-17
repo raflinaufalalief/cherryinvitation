@@ -6,7 +6,7 @@ import { AiOutlineGoogle } from 'react-icons/ai'
 const SignIn = () => {
   return (
     <>
-      <div className='py-[1rem] px-[2rem]'>
+      <div className='py-[2rem] px-[2rem] pb-[4rem]'>
         <div className=''>
           <div className='flex flex-col items-center'>
             <img src={logo} alt='logo' className='w-[150px]' />
@@ -54,6 +54,17 @@ const SignIn = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <hr className='mt-[1rem]' />
+          <div className='mt-[1rem]'>
+            <h1 className='text-center text-[13px] text-'>
+              Don't have an account yet?{' '}
+              <span className=''>
+                <Link to={'/sign-up'} className='text-100 font-medium'>
+                  Register
+                </Link>
+              </span>
+            </h1>
           </div>
         </div>
       </div>
