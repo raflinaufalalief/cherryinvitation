@@ -18,28 +18,28 @@ const SignIn = () => {
           <div className='mt-[3rem]'>
             <h1 className='text-xl font-semibold text-center'>Login</h1>
             <div className='text-center space-y-6 pt-[1rem]'>
-              <div className='space-y-4'>
+              <div className='space-y-4 w-auto'>
                 <input
                   type='text'
                   placeholder='Email'
-                  className='outline-none rounded-md border-secondary border-2 px-3 h-[2rem]'
+                  className='outline-none rounded-md border-secondary border-2 px-3 w-full h-[2rem]'
                 />
                 <input
                   type='password'
                   placeholder='Password'
-                  className='outline-none rounded-md border-secondary border-2 px-3 h-[2rem]'
+                  className='outline-none rounded-md border-secondary border-2 w-full px-3 h-[2rem]'
                 />
               </div>
-              <div className='px-[3.3rem] flex flex-col items-start'>
+              <div className='flex flex-col'>
                 <button
                   type='submit'
-                  className='w-full bg-secondary mb-2 px-[5.8rem] rounded-full py-[.4rem] text-200'
+                  className='bg-secondary mb-2 px-3 rounded-full py-[.4rem] text-200'
                 >
                   Login
                 </button>
                 <button
                   type='submit'
-                  className='w-full px-[1rem] flex items-center gap-x-2 justify-center rounded-full border-2 border-secondary py-[.4rem] text-secondary'
+                  className='px-[1rem] flex justify-center rounded-full border-2 border-secondary py-[.4rem] text-secondary'
                 >
                   <AiOutlineGoogle className='text-2xl' />
                   Login With Google
