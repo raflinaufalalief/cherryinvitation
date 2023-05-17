@@ -44,12 +44,14 @@ const SignIn = () => {
                   <AiOutlineGoogle className='text-2xl' />
                   Login With Google
                 </button>
-                <Link
-                  to={'/lupa-password'}
-                  className=' text-[13px] mt-[.5rem] text-secondary'
-                >
-                  Lupa Password
-                </Link>
+                <div className='text-left mt-3'>
+                  <Link
+                    to={'/lupa-password'}
+                    className=' text-[13px] mt-[.5rem] text-secondary'
+                  >
+                    Lupa Password
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
