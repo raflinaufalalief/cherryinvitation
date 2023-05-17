@@ -30,16 +30,16 @@ const SignIn = () => {
                   className='outline-none rounded-md border-secondary border-2 w-full px-3 h-[2rem]'
                 />
               </div>
-              <div className='flex flex-col'>
+              <div className='flex flex-col w-auto'>
                 <button
                   type='submit'
-                  className='bg-secondary mb-2 px-3 rounded-full py-[.4rem] text-200'
+                  className='bg-secondary mb-2 px-3 rounded-full w-full py-[.4rem] text-200'
                 >
                   Login
                 </button>
                 <button
                   type='submit'
-                  className='px-[1rem] flex justify-center rounded-full border-2 border-secondary py-[.4rem] text-secondary'
+                  className='px-[1rem] flex justify-center rounded-full w-full border-2 border-secondary py-[.4rem] text-secondary'
                 >
                   <AiOutlineGoogle className='text-2xl' />
                   Login With Google
