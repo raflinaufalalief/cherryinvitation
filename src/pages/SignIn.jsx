@@ -6,7 +6,7 @@ import { AiOutlineGoogle } from 'react-icons/ai'
 const SignIn = () => {
   return (
     <>
-      <div className='py-[1rem] px-[1rem]'>
+      <div className='py-[1rem] px-[2rem]'>
         <div className=''>
           <div className='flex flex-col items-center'>
             <img src={logo} alt='logo' className='w-[150px]' />
