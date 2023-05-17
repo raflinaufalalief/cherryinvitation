@@ -84,11 +84,12 @@ const DesktopNav = () => {
 
 /* Mobile Nav */
 const MobileNav = () => {
+  const handleMenu = () => setMenu(false)
   const [menu, setMenu] = useState(false)
   return (
     <div className='w-full bg-white'>
       <div className='flex items-center justify-between px-[1rem] py-6 font-medium '>
-        <div className=''>
+        <div className='' onClick={handleMenu}>
           <Link to={'/'} className='flex items-center'>
             <img src={Logo} alt='logo' className='cursor-pointer w-[48px]' />
             <h1 className='text-base font-bold'>Cherry Invitation</h1>

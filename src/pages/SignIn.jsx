@@ -3,7 +3,13 @@ import logo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { AiOutlineGoogle } from 'react-icons/ai'
 
-const SignIn = () => {
+/* Desktop Nav */
+const DesktopNav = () => {
+  return <div>SignIn</div>
+}
+
+/* Mobile Nav */
+const MobileNav = () => {
   return (
     <>
       <div className='py-[2rem] px-[2rem] pb-[4rem]'>
@@ -41,7 +47,7 @@ const SignIn = () => {
                   type='submit'
                   className='px-[1rem] flex justify-center rounded-full w-full border-2 border-secondary py-[.4rem] text-secondary'
                 >
-                  <AiOutlineGoogle className='text-2xl' />
+                  <AiOutlineGoogle className='text-2xl mr-[5px]' />
                   Login With Google
                 </button>
                 <div className='text-left mt-3'>
@@ -59,7 +65,7 @@ const SignIn = () => {
           <div className='mt-[1rem]'>
             <h1 className='text-center text-[13px] text-'>
               Don't have an account yet?{' '}
-              <span className=''>
+              <span className='ml-2'>
                 <Link to={'/sign-up'} className='text-100 font-medium'>
                   Register
                 </Link>
@@ -68,6 +74,14 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+    </>
+  )
+}
+
+const SignIn = () => {
+  return (
+    <>
+      <MobileNav />
     </>
   )
 }
