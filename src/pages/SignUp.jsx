@@ -28,17 +28,17 @@ const MobileNav = () => {
                 <input
                   type='text'
                   placeholder='Email'
-                  className='outline-none rounded-md border-secondary border-2 px-3 w-full h-[2rem]'
+                  className='outline-none rounded-md border-secondary border-2 px-3 w-full py-[.3rem]'
                 />
                 <input
                   type='password'
                   placeholder='Password'
-                  className='outline-none rounded-md border-secondary border-2 w-full px-3 h-[2rem]'
+                  className='outline-none rounded-md border-secondary border-2 w-full px-3 py-[.3rem]'
                 />
                 <input
                   type='password'
                   placeholder='Confirm Password'
-                  className='outline-none rounded-md border-secondary border-2 w-full px-3 h-[2rem]'
+                  className='outline-none rounded-md border-secondary border-2 w-full px-3 py-[.3rem]'
                 />
               </div>
               <div className='flex flex-col w-auto'>
