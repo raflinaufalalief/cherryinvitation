@@ -4,6 +4,7 @@ import Logo from '../assets/logo.png'
 import { BiMenu } from 'react-icons/bi'
 import { MdImagesearchRoller, MdImage } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
 // import { NavLinks } from './NavLinks'
 
 export const Links = [
@@ -22,20 +23,21 @@ export const Links = [
 ]
 /* Desktop Nav */
 const DesktopNav = () => {
+  const [about, setAbout] = useState(false)
   return (
     <div className='w-full bg-white'>
-      <div className='flex items-center justify-between px-[7rem] py-6 font-medium'>
+      <div className='flex items-center justify-between desktopNav:px-[4rem] px-[7rem] py-6 font-medium'>
         <div className='flex items-center'>
-          <img src={Logo} alt='logo' className='md:cursor-pointer w-[75px]' />
+          <img src={Logo} alt='logo' className='md:cursor-pointer w-[65px]' />
           <h1 className='text-2xl'>Cherry Invitation</h1>
         </div>
         <ul>
           <div>
             <div className='flex'>
               <div className='flex items-center mr-6 gap-x-7'>
-                {Links.map((index, id) => (
+                {Links.map((index) => (
                   <li
-                    key={id.id}
+                    key={index.id}
                     className='flex items-center cursor-pointer hover:text-secondary/95'
                   >
                     <a href={index.link}>{index.name}</a>
@@ -144,9 +146,35 @@ const MobileNav = () => {
   )
 }
 export default function Navbar() {
+  const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({
+      minWidth: 320,
+      maxWidth: 1023,
+    })
+    return isMobile ? children : null
+  }
+
+  /* const Tablet = ({ children }) => {
+    const isTablet = useMediaQuery({
+      minWidth: 768,
+    })
+    return isTablet ? children : null
+  } */
+  const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({
+      minWidth: 1024,
+    })
+    return isDesktop ? children : null
+  }
+
   return (
     <div>
-      <MobileNav />
+      <Desktop>
+        <DesktopNav />
+      </Desktop>
+      <Mobile>
+        <MobileNav />
+      </Mobile>
     </div>
   )
 }
