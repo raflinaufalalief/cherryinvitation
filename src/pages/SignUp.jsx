@@ -51,6 +51,7 @@ const MobileNav = () => {
                 <button
                   type='submit'
                   className='px-[1rem] flex justify-center rounded-full w-full border-2 border-secondary py-[.4rem] text-secondary'
+
                 >
                   <AiOutlineGoogle className='text-2xl mr-[5px]' />
                   Register With Google
@@ -69,6 +70,7 @@ const MobileNav = () => {
               </span>
             </h1>
           </div>
+
         </div>
       </div>
     </>
