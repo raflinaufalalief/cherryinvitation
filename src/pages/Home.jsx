@@ -1,3 +1,4 @@
+
 import React from "react";
 import Hero from "../components/Hero";
 import Platform from "../components/Platform";
@@ -19,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home

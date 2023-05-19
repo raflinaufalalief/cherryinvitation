@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react'
 
 const Design = () => {
+
   return <div className="">Design</div>;
 };
 
-export default Design;
+export default Design
