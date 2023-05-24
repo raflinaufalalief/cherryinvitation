@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <div className="overflow-hidden">
-        {/* <Navbar /> */}
+        <Navbar />
         <Router />
       </div>
     </>

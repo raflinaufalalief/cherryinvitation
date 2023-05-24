@@ -10,22 +10,26 @@ const Invitation = () => {
   return (
     <section className="section">
       <div className="container mx-auto">
-        <h2 className="flex items-center justify-center py-3 h3 ">
-          Kenapa Harus Punya Undangan Website?
-        </h2>
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-[30px]">
           {/* text */}
           <div className="flex-1">
-            <div className="pretitle">{pretitle}</div>
-            <h2 className="h4">{title}</h2>
-            <p className="blue">{subtitle}</p>
-            <button className="flex items-center transition-all btn-link gap-x-3 hover:gap-x-5">
-              {btnLink} <img src={btnIcon} alt="" />
-            </button>
+            <img
+              src="https://isinvitation.com/wp-content/uploads/2023/01/MOCKUP-WDP.png"
+              alt=""
+            />
           </div>
           {/* image */}
           <div className="flex-1">
-            <img src={image} alt="" />
+            <h2 className="mb-2 title lg:mb-5 lg:leading-[42px] lg:text-[35px]">
+              {title}{" "}
+              <span className="text-secondary lg:leading-[42px] lg:text-[35px]">
+                Undangan Digital?
+              </span>
+            </h2>
+            <p className="mb-5 blue lg:mb-10">{subtitle}</p>
+            {/* <button className="flex items-center transition-all btn-link gap-x-3 hover:gap-x-5">
+              {btnLink} <img src={btnIcon} alt="" />
+            </button> */}
           </div>
         </div>
       </div>

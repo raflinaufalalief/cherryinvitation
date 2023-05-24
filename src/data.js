@@ -28,17 +28,18 @@ export const header = {
 };
 
 export const nav = [
-  { name: "HOME", href: "/" },
-  { name: "FITUR", href: "/" },
-  { name: "KATALOG", href: "/" },
-  { name: "HARGA", href: "/" },
-  { name: "FAQ", href: "/" },
+  { name: "Home", href: "/" },
+  { name: "Fitur", href: "/fitur" },
+  { name: "Katalog", href: "/katalog" },
+  { name: "Harga", href: "/harga" },
+  { name: "Faq", href: "/faq" },
 ];
 
 export const hero = {
-  title: "Undangan Website",
+  title: "JASA PEMBUATAN UNDANGAN ONLINE",
+  pretitle: "BUAT HARI SPESIAL MAKIN SPESIAL",
   subtitle:
-    "Buat undangan website kamu jadi lebih cantik, menarik dan aesthetic dengan waktu singkat!",
+    "This template is brought to you by TemplateMo website. Feel free to use this for a commercial purpose. You are not allowed to redistribute the template ZIP file on any other template website. Thank you.",
   btnText: "Pesan Sekarang",
   image: HeroImg,
 };
@@ -46,9 +47,9 @@ export const hero = {
 export const features = {
   feature1: {
     pretitle: "make it easy",
-    title: "Mudah Digunakan",
+    title: "Apa Itu ",
     subtitle:
-      "Hanya dengan link, undangan digital bisa dibagikan keseluruh kontak lengkap dengan nama tamu undangan",
+      "We hope this DigiMedia template is useful for your work. You can use this template for any purpose. You may contribute a little amount via PayPal to support TemplateMo in creating new templates regularly.",
     btnLink: "Learn more",
     btnIcon: ArrowRightImg,
     image: Feature1Img,
@@ -137,48 +138,54 @@ export const product = {
 };
 
 export const pricing = {
-  title: "Harga terbaik untuk anda",
+  title: "Pilih Paket",
   subtitle:
-    "kamu adalah segalanya, untuk kamu harga terbaik dengan jaminan website yang berkualitas",
+    "We hope this DigiMedia template is useful for your work. You can use this template for any purpose. You may contribute a little amount via PayPal to support TemplateMo in creating new templates regularly.",
   cards: [
     {
-      icon: PricingIcon1,
-      title: "Starter Plan",
+      subtitle: "Fixed Price",
+      title: "BASIC",
+      pretitle: "Made for starters",
       services: [
-        { name: "Store unlimited data" },
-        { name: "Export to pdf, xls, csv" },
-        { name: "Cloud server support" },
+        { name: "Fixed Price" },
+        { name: "Bandwith 50 GB" },
+        { name: "Add-On Domains 10" },
+        { name: "Mail Adresses 25" },
+        { name: "Support Only Mail" },
       ],
-      price: "$9.99",
-      userAmount: "up to 3 user + 1.99 per user",
-      btnText: "Get this",
+      price: "9.99",
+      btnText: "Pesan Sekarang",
       delay: 300,
     },
     {
-      icon: PricingIcon2,
-      title: "Silver Plan",
+      subtitle: "Fixed Price",
+      title: "PREMIUM",
+      pretitle: "Made for starters",
       services: [
-        { name: "Store unlimited data" },
-        { name: "Export to pdf, xls, csv" },
-        { name: "Cloud server support" },
+        { name: "Fixed Price" },
+        { name: "Bandwith 50 GB" },
+        { name: "Add-On Domains 10" },
+        { name: "Mail Adresses 25" },
+        { name: "Support Only Mail" },
       ],
-      price: "$19.99",
-      userAmount: "up to 3 user + 1.99 per user",
-      btnText: "Get this",
-      delay: 600,
+      price: "9.99",
+      btnText: "Pesan Sekarang",
+      delay: 300,
     },
     {
-      icon: PricingIcon3,
-      title: "Diamond Plan",
+      subtitle: "Fixed Price",
+      title: "EXCLUSIVE",
+      pretitle: "Made for starters",
       services: [
-        { name: "Store unlimited data" },
-        { name: "Export to pdf, xls, csv" },
-        { name: "Cloud server support" },
+        { name: "Fixed Price" },
+        { name: "Bandwith 50 GB" },
+        { name: "Add-On Domains 10" },
+        { name: "Mail Adresses 25" },
+        { name: "Support Only Mail" },
       ],
-      price: "$29.99",
-      userAmount: "up to 3 user + 1.99 per user",
-      btnText: "Get this",
-      delay: 900,
+      price: "9.99",
+      btnText: "Pesan Sekarang",
+      delay: 300,
     },
   ],
 };

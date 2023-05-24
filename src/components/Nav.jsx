@@ -11,7 +11,7 @@ const Nav = () => {
           const { href, name } = item;
           return (
             <li key={index}>
-              <a className="transition hover:text-secondary " href={href}>
+              <a className="transition hover:text-secondary" href={href}>
                 {name}
               </a>
             </li>

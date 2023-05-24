@@ -12,18 +12,23 @@ import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import Payment from "../components/Payment";
 import Testimonials from "../components/Testimonials";
+import Katalog from "../components/Katalog";
+
+// import TopBar from "../components/TopBar";
 
 const Home = () => {
   return (
     <div>
+      {/* <TopBar /> */}
       <Navbar />
       <Hero />
       <Invitation />
-      <Invitation2 />
+      <Katalog />
+      {/* <Invitation2 />
       <Invitation3 />
       <Options />
       <Fitur />
-      <Teamplate />
+      <Teamplate /> */}
       <PriceList />
       <Testimonials />
       <Faq />

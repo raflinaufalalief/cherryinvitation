@@ -10,27 +10,16 @@ import Nav from "./Nav";
 const Navbar = () => {
   // mobile nav state
   const [mobileNav, setMobileNav] = useState(false);
-  // dekstop nav state
-  const [isActive, setIsActive] = useState(false);
   // destructure header data
   const { logo, btnText } = header;
-  // scroll eventclassName="text-3xl text-accent"
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
-    });
-  });
+
   return (
     <>
-      <nav
-        className={`${
-          isActive ? "lg:top-0 bg-primary shadow-md" : "lg:top-[20px]"
-        } py-6 lg:py-4 fixed w-full transition-all z-10`}
-      >
+      <nav className="fixed z-10 w-full py-6 transition-all bg-white shadow-md lg:top-0 lg:py-4">
         <div className="container flex items-center justify-between mx-auto ">
           {/* logo */}
           <a href="/">
-            <img src={logo} alt="" width={175} />
+            <img src={logo} alt="" className="w-[250px]" />
           </a>
           {/* nav - initially hidden - show on dekstop mode */}
           <div className="hidden lg:flex">
@@ -46,16 +35,16 @@ const Navbar = () => {
             onClick={() => setMobileNav(!mobileNav)}
           >
             {mobileNav ? (
-              <HiOutlineX className="text-3xl text-secondary" />
+              <HiOutlineX className="text-3xl text-300" />
             ) : (
-              <HiMenuAlt4 className="text-3xl text-secondary" />
+              <HiMenuAlt4 className="text-3xl text-300" />
             )}
           </button>
           {/* mobile nav - hidden on dekstop */}
           <div
             className={`${
-              mobileNav ? "left-0" : "-left-full"
-            }   fixed top-0 bottom-0 w-[60vw] lg:hidden transition-all `}
+              mobileNav ? "top-0" : "left-full"
+            } left-0   fixed top-[105px] bottom-0 w-full lg:hidden transition  `}
           >
             <MobileNav />
           </div>

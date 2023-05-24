@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +18,7 @@
   }
   .title,
   .section-title {
-    @apply text-4xl lg:text-6xl mb-6 font-bold leading-[55px];
+    @apply text-3xl lg:text-[48px] mb-6 font-bold leading-[40px] lg:leading-[60px];
   }
   .h2 {
     @apply text-5xl lg:text-7xl font-bold;
@@ -30,25 +30,31 @@
     @apply text-2xl lg:text-xl font-bold;
   }
   .pretitle {
-    @apply text-lg lg:text-[22px] text-dark mb-4 lg:mb-6 uppercase font-normal;
+    @apply text-lg lg:text-[20px] text-secondary mb-8  uppercase font-bold;
   }
   .lead {
     @apply text-2xl text-light font-normal mb-6;
   }
   .blue {
-    @apply lg:text-2xl text-300 font-normal mb-6;
+    @apply lg:text-[16px] text-slate-400 font-normal leading-[30px] mb-6;
   }
   .link {
     @apply text-lg text-dark;
   }
   .section {
-    @apply py-8 lg:py-16;
+    @apply py-8 lg:py-32;
   }
   .btn {
-    @apply rounded-lg transition flex justify-center items-center;
+    @apply rounded-full transition flex justify-center items-center;
+  }
+  .btn2 {
+    @apply rounded-md transition flex justify-center items-center;
   }
   .btn-lg {
-    @apply h-[75px] px-6 text-2xl font-normal;
+    @apply w-full px-6 py-3 text-lg font-normal;
+  }
+  .btn-lg2 {
+    @apply text-lg font-normal;
   }
   .btn-md {
     @apply h-[60px] px-[16px] text-lg font-normal;
@@ -67,5 +73,12 @@
   }
   .btn-link {
     @apply text-secondary text-xl lg:text-2xl;
+  }
+  .gambar-katalog {
+    @apply shadow-[7px_10px_#17289999] rounded-[15px];
+  }
+  .pricing-table {
+    @apply shadow-[7px_15px_13px_4px_rgba(0,0,0,0.15)] rounded  border p-8 border-solid border-[#e4e4e4]
+    bg-[#fff];
   }
 }
