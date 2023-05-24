@@ -4,9 +4,9 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 const Faq = () => {
   return (
-    <div>
+    <div className="section">
       <div className="w-full px-4 pt-16">
-        <div className="container w-full max-w-full p-2 mx-auto bg-white rounded-2xl">
+        <div className="w-full p-2 mx-auto bg-white max-width: 640px rounded-2xl">
           <Disclosure as="div" className="mt-2">
             {({ open }) => (
               <>
