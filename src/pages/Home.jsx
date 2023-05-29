@@ -24,16 +24,11 @@ const Home = () => {
       <Hero />
       <Invitation />
       <Katalog />
-      {/* <Invitation2 />
-      <Invitation3 />
-      <Options />
-      <Fitur />
-      <Teamplate /> */}
       <PriceList />
+      <Fitur />
       <Testimonials />
       <Faq />
       <Payment />
-      <Footer />
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Fitur = () => {
         {/* title & subtitle */}
 
         <h2
-          className="mb-10 text-center h3 lg:mb-10"
+          className="flex items-center justify-center mb-2 font-bold uppercase text-400 lg:leading-6 lg:mb-5"
           data-aos="fade-up"
           data-aos-offset="400"
           data-aos-delay="300"
@@ -21,7 +21,7 @@ const Fitur = () => {
           {title}
         </h2>
         <p
-          className="mb-10 text-center blue lg:mb-16"
+          className="mb-2 text-center title lg:mb-7 lg:text-[35px] lg:leading-[42px]"
           data-aos="fade-up"
           data-aos-offset="400"
           data-aos-delay="400"
@@ -31,7 +31,9 @@ const Fitur = () => {
 
         {/* cards */}
 
-        <Cards />
+        <div className="flex items-center justify-center">
+          <Cards />
+        </div>
       </div>
     </section>
   );

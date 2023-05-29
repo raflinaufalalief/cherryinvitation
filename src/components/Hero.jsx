@@ -25,12 +25,12 @@ const Hero = () => {
   // destructure hero data
   const { title, pretitle, subtitle, btnText, image } = hero;
   return (
-    <section className="section bg-[url('https://undangan-html.netlify.app/assets/images/slider-right-dec.jpg')]">
+    <section className="section bg-[url('/src/assets/image/banner.jpg')]">
       <div className="container flex items-center justify-center pt-20 mx-auto ">
         <div className="flex flex-col lg:gap-x-[30px] gap-y-8 lg:gap-y-0 lg:flex-row items-center justify-center text-center lg:text-left">
           {/* text */}
           <div className="flex-1">
-            <p className="mb-2 pretitle lg:mb-5 ">{pretitle}</p>
+            <p className="mb-2 pretitle pt-2 text-[#726AE3] ">{pretitle}</p>
             <h1 className="mb-2 title lg:mb-5">
               {title}
               <br /> <span className="uppercase text-secondary" ref={el} />

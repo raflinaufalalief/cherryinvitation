@@ -32,6 +32,7 @@ export const nav = [
   { name: "Fitur", href: "/fitur" },
   { name: "Katalog", href: "/katalog" },
   { name: "Harga", href: "/harga" },
+  { name: "Fitur", href: "/fitur" },
   { name: "Faq", href: "/faq" },
 ];
 
@@ -78,7 +79,7 @@ export const features = {
 
 export const product = {
   title: "Fitur Unggulan",
-  subtitle: "Fitur undangan online unggulan yang siap Kamu gunakan",
+  subtitle: "Fitur Undangan Online",
   cards: [
     {
       icon: CardIconImg1,
@@ -91,12 +92,6 @@ export const product = {
       title: "Cloud server",
       subtitle: "Elit esse cillum dolore eu fugiat nulla pariatur",
       delay: 400,
-    },
-    {
-      icon: CardIconImg3,
-      title: "Pure Javascript",
-      subtitle: "Elit esse cillum dolore eu fugiat nulla pariatur",
-      delay: 600,
     },
     {
       icon: CardIconImg3,

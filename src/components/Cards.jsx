@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 // import data
 import { product } from "../data";
-// import images
-import ArrowImg from "../assets/image/arrow-right.svg";
 
 const Cards = () => {
   // index state
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(false);
   // destructure product data
   const { cards } = product;
   return (
     <>
       {/* cards */}
-      <div className="grid grid-rows-3 gap-3 lg:gap-24 lg:grid-cols-3 md:grid-cols-2 ">
+      <div className="grid grid-rows-2 gap-3 py-4 lg:gap-6 lg:grid-cols-4 md:grid-cols-2 ">
         {cards.map((card, cardIndex) => {
           // destructure card
           const { icon, title, subtitle, delay } = card;
@@ -26,8 +24,8 @@ const Cards = () => {
               <div
                 onClick={() => setIndex(cardIndex)}
                 className={`${
-                  index === cardIndex && "bg-primary shadow-2xl"
-                }  lg:w-[392px] lg:h-[192px] flex flex-col justify-center items-center   text-center rounded-[12px] cursor-pointer transition-all`}
+                  index === cardIndex ? "pricing-table" : "shadow-2xl bg-white"
+                }  w-[280px] h-[304px] flex flex-col justify-center items-center text-center rounded-[12px] cursor-pointer transition-all mx-auto   `}
               >
                 {/* card icon */}
                 <div className="mb-6">
@@ -38,7 +36,6 @@ const Cards = () => {
                 {/* card subtitle */}
                 <p className="mb-6 text-light">{subtitle}</p>
                 {/* arrow img */}
-                {index === cardIndex && <img src={ArrowImg} />}
               </div>
             </div>
           );

@@ -14,7 +14,7 @@ export default {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1280px",
+      xl: "1440px",
     },
     extend: {
       colors: {
@@ -31,7 +31,7 @@ export default {
         grey: "#F5F5F5",
       },
       backgroundImage: {
-        banner: "url('/src/assets/image/banner.jpg)",
+        banner: "url('/src/assets/image/banner2.jpg')",
       },
     },
   },
