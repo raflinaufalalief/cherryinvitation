@@ -21,46 +21,40 @@ const Payment = () => {
             <h1 className="py-8 text-3xl text-center text-white lg:leading-[35px] font-medium">
               Pembayaran
             </h1>
-            <div>
+            <div className="px-52">
               <div className="flex space-x-7 ">
                 <img
                   src="https://cherryshopcom.netlify.app/assets/BCA-6881a9a4.png"
                   alt=""
-                  width={100}
-                  className="p-4 border rounded-md bg-100"
+                  className="p-4 border rounded-md bg-100  max-w-[90px]"
                 />
                 <img
                   src="https://cherryshopcom.netlify.app/assets/BNI-15049466.png"
                   alt=""
-                  width={100}
-                  className="p-4 border rounded-md bg-100"
+                  className="p-4 border rounded-md bg-100 max-w-[90px]"
                 />
 
                 <img
                   src="https://cherryshopcom.netlify.app/assets/GOPAY-ead97464.png"
                   alt=""
-                  width={100}
-                  className="p-4 border rounded-md bg-100"
+                  className="p-4 border rounded-md bg-100 max-w-[90px]"
                 />
               </div>
               <div className="flex mt-5 space-x-7 ">
                 <img
                   src="https://cherryshopcom.netlify.app/assets/indomaret-logo-9481ac47.png"
                   alt=""
-                  width={100}
-                  className="p-4 border rounded-md bg-100"
+                  className="p-4 border rounded-md bg-100 max-w-[90px]"
                 />
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/2560px-BANK_BRI_logo.svg.png"
                   alt=""
-                  width={100}
-                  className="p-4 border rounded-md bg-100"
+                  className="p-4 border rounded-md bg-100 max-w-[90px]"
                 />
                 <img
                   src="https://cherryshopcom.netlify.app/assets/atm-bersama-0f2c50e9.jpg"
                   alt=""
-                  width={100}
-                  className="p-4 border rounded-md bg-100"
+                  className="p-4 border rounded-md bg-100 max-w-[90px]"
                 />
               </div>
             </div>

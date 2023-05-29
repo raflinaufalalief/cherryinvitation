@@ -9,7 +9,7 @@ const Fitur = () => {
   const { title, subtitle } = product;
   return (
     <section className="section">
-      <div className="container mx-auto">
+      <div className="mx-auto ">
         {/* title & subtitle */}
 
         <h2
@@ -31,9 +31,7 @@ const Fitur = () => {
 
         {/* cards */}
 
-        <div className="flex items-center justify-center">
-          <Cards />
-        </div>
+        <Cards />
       </div>
     </section>
   );

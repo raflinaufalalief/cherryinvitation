@@ -10,7 +10,7 @@ const Cards = () => {
   return (
     <>
       {/* cards */}
-      <div className="grid grid-rows-2 gap-3 py-4 lg:gap-6 lg:grid-cols-4 md:grid-cols-2 ">
+      <div className="container grid grid-rows-2 gap-3 py-4 mx-auto lg:grid-cols-4 md:grid-cols-2 ">
         {cards.map((card, cardIndex) => {
           // destructure card
           const { icon, title, subtitle, delay } = card;
@@ -25,7 +25,7 @@ const Cards = () => {
                 onClick={() => setIndex(cardIndex)}
                 className={`${
                   index === cardIndex ? "pricing-table" : "shadow-2xl bg-white"
-                }  w-[280px] h-[304px] flex flex-col justify-center items-center text-center rounded-[12px] cursor-pointer transition-all mx-auto   `}
+                }  lg:max-w-[280px] h-[304px] flex flex-col justify-center items-center text-center rounded-[12px] cursor-pointer transition-all  `}
               >
                 {/* card icon */}
                 <div className="mb-6">
